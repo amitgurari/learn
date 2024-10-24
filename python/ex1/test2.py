@@ -14,6 +14,7 @@ mytext = "my text"
 mytext = 'my text'
 mytext="line1\nline2"
 print(mytext)
+print(len(mytext))
 mytext="""line1
 line2"""
 print(mytext)
@@ -103,3 +104,81 @@ def test2(num1,num2,num5):
 
 print(test2(1 , 2,5))
 print(test2(3, 3,5))
+
+print("--------------------")
+
+value = 1
+print(value)
+if True:
+    value = 2
+    print(value)
+    if False:
+        value = 3
+        print(value)
+print(value)
+
+
+print("--------------------")
+
+def my_func1(param1, param2):
+    print("my func 1")
+    print(param1)
+    print(param2)
+
+my_func1(1, 2)
+my_func1("amit", "gur ari")
+my_func1("hello", "world")
+my_func1(66, "big number")
+
+print("--------------------")
+
+def my_func2(param1, param2, param3):
+    print("my_func2 -> param1=", param1, "param2=", param2, "param3=", param3)
+
+my_func2(1, 2, 3)
+my_func2(1, param3=2, param2=3)
+
+print("--------------------")
+
+children = ["sahar", "ran", "amit"]
+print(children)
+boys = children[1:]
+print(boys)
+boys = children[-1:]
+print(boys)
+
+boys = ["ran", "amit"]
+girls = ["sahar"]
+children = boys + girls
+print(children)
+print(len(children))
+children.clear()
+print(children)
+print(len(children))
+
+print("--------------------")
+
+mylist = ["a","a", 1, 1, 1, 3, 3, 3, 3, 3]
+print(mylist)
+print(len(mylist))
+print(mylist[:2])
+
+print("--------------------")
+
+myset = {"a", "a", "a", 1, 1, 1}
+print(myset)
+print(len(myset))
+
+print("--------------------")
+
+my_dict = {"amit": 12, "sahar": 17}
+print(my_dict)
+print(len(my_dict))
+print(my_dict["sahar"])
+age = my_dict["sahar"]
+print(age)
+
+
+my_dict = {"amit": [12, "boy"], "sahar": [17, "girl"]}
+values = my_dict["amit"]
+print(values)
